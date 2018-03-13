@@ -1,0 +1,77 @@
+.backgroundImage {
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    background: url('../assets/background.jpg');
+}
+.hello {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+.helloImgContainer {
+}
+.helloImg {
+    border-radius: 50%;
+}
+.helloContainer {
+    margin-left: 4%;
+    width: 50%;
+}
+.helloText {
+    font-family: 'Proxima Nova', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    font-size: 1.2em;
+    font-size: 20px;
+    color: white;
+}
+.linkContainer {
+    width: 100%;
+    position: absolute;
+    top:0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+a.link {
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+    padding: 10px;
+}
+a.link:hover {
+    transition: all 0.7s;
+    background-color: rgba(255, 255, 255, 0.4);
+}
+.inText {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+}
+.inText:hover {
+    text-decoration: underline;
+    color: gray
+}
+@media (max-width: 768px) {
+    .hello {
+        margin-top: 50px;
+        flex-direction: column;
+    }
+    .helloContainer {
+        margin-top: 25px;
+        margin-left: 0px;
+        width: 95%;
+    }
+}
